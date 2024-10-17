@@ -13,7 +13,6 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 CORS(app)
 
-# Get predicted sales in the future (date specified) by branch daily
 @app.route("/get_sentiment_analysis", methods=['GET','POST'])
 def getSentiment():
    # query params
